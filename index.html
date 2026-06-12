@@ -12,11 +12,26 @@ body{
     background:black;
 }
 
+/* Background */
+
 #background{
     width:100vw;
     height:100vh;
     object-fit:contain;
     display:block;
+}
+
+/* Floating D20 */
+
+#dice{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:220px;
 }
 
 </style>
@@ -25,6 +40,8 @@ body{
 <body>
 
 <img id="background" src="Background A.png">
+
+<img id="dice" src="D20 asset.PNG">
 
 </body>
 </html>
