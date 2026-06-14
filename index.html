@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <script>
+
+document.getElementById("rollButton").onclick = function() {
+
+    let roll = Math.floor(Math.random() * 20) + 1;
+
+    document.getElementById("result").innerHTML = roll;
+
+};
+
+</script>
 <head>
 <meta charset="UTF-8">
 <title>The Dice of Destiny</title>
@@ -65,6 +76,21 @@ body{
 
     font-family:Arial, sans-serif;
 }
+    #rollButton{
+
+    position:absolute;
+
+    top:90%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    padding:10px 20px;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
     
   
 </style>
@@ -77,6 +103,8 @@ body{
 <img id="dice" src="D20 asset.PNG">
 
 <div id="result">17</div>
+
+<button id="rollButton">ROLL FOR YOUR FATE</button>
 
 </body>
 
