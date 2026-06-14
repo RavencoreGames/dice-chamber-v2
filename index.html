@@ -109,10 +109,13 @@ document.getElementById("rollButton").onclick = function() {
 
     document.getElementById("dice").style.animation =
     "pulse 0.4s ease";
+let roll = Math.floor(Math.random() * 20) + 1;
 
-    let roll = Math.floor(Math.random() * 20) + 1;
+setTimeout(function(){
 
     document.getElementById("result").innerHTML = roll;
+
+},400);
 
     setTimeout(function(){
 
