@@ -110,20 +110,8 @@ document.getElementById("rollButton").onclick = function() {
     document.getElementById("dice").style.animation =
     "pulse 0.4s ease";
 let roll = Math.floor(Math.random() * 20) + 1;
+    document.getElementById("dice").src = "D20-roll-01.png";
 let frame = 1;
-
-let animation = setInterval(function(){
-
-    document.getElementById("dice").src =
-    "D20-roll-0" + frame + ".png";
-
-    frame++;
-
-    if(frame > 6){
-        frame = 1;
-    }
-
-},100);
 
 setTimeout(function(){
 
