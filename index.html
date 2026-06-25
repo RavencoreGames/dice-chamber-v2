@@ -116,7 +116,7 @@ let animation = setInterval(function(){
 
     document.getElementById("dice").src = "D20-" + fakeRoll + ".png";
 
-},75);
+},200);
 
 setTimeout(function(){
 
@@ -126,13 +126,13 @@ setTimeout(function(){
 
     document.getElementById("result").innerHTML = roll;
 
-},600);
+},1000);
     setTimeout(function(){
 
         document.getElementById("dice").style.animation =
         "float 4s ease-in-out infinite";
 
-    },600);
+    },1000);
 
 };
 
