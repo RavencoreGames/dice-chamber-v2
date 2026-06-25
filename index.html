@@ -52,21 +52,35 @@ body{
     
     animation: float 4s ease-in-out infinite;
 }
-   #wisp{
+  #wisp{
 
     position:absolute;
 
     left:50%;
     top:58%;
 
-    width:100px;
-    height:100px;
+    width:60px;
+    height:160px;
 
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%) rotate(18deg);
 
-    background:red;
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(180,120,255,.45) 0%,
+            rgba(180,120,255,.18) 45%,
+            rgba(180,120,255,0) 80%
+        );
 
-    z-index:100;
+    border-radius:50%;
+
+    filter:blur(18px);
+
+    opacity:.65;
+
+    pointer-events:none;
+
+    z-index:2;
 }
     #result{
 
