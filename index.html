@@ -111,7 +111,19 @@ document.getElementById("rollButton").onclick = function() {
     "pulse 0.4s ease";
 let roll = Math.floor(Math.random() * 20) + 1;
     document.getElementById("dice").src = "D20-roll-01.png";
-let frame = 1;
+    setTimeout(function(){
+    document.getElementById("dice").src = "D20-roll-02.png";
+},120);
+
+setTimeout(function(){
+    document.getElementById("dice").src = "D20-roll-03.png";
+},240);
+
+setTimeout(function(){
+    document.getElementById("dice").src = "D20-roll-04.png";
+},360);
+
+    let frame = 1;
 
 setTimeout(function(){
 
@@ -121,13 +133,13 @@ setTimeout(function(){
 
     document.getElementById("result").innerHTML = roll;
 
-},1000);
+},550);
     setTimeout(function(){
 
         document.getElementById("dice").style.animation =
         "float 4s ease-in-out infinite";
 
-    },1000);
+    },450);
 
 };
 
