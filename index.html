@@ -52,6 +52,26 @@ body{
     
     animation: float 4s ease-in-out infinite;
 }
+    #wisp{
+
+    position:absolute;
+
+    left:50%;
+    top:58%;
+
+    width:80px;
+    height:140px;
+
+    transform:translate(-50%,-50%);
+
+    background:rgba(170,85,255,0.35);
+
+    border-radius:50%;
+
+    filter:blur(25px);
+
+    pointer-events:none;
+}
     #result{
 
     position:absolute;
@@ -98,6 +118,7 @@ body{
 <img id="background" src="Blueprint 2.png">
 
 <img id="dice" src="D20 asset.PNG">
+        <div id="wisp"></div>
 
 <div id="result">17</div>
 
