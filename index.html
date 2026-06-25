@@ -110,20 +110,29 @@ document.getElementById("rollButton").onclick = function() {
     document.getElementById("dice").style.animation =
     "pulse 0.4s ease";
 let roll = Math.floor(Math.random() * 20) + 1;
-    document.getElementById("dice").src = "D20-" + roll + ".png";
+let animation = setInterval(function(){
+
+    let fakeRoll = Math.floor(Math.random() * 20) + 1;
+
+    document.getElementById("dice").src = "D20-" + fakeRoll + ".png";
+
+},75);
 
 setTimeout(function(){
 
+    clearInterval(animation);
+
+    document.getElementById("dice").src = "D20-" + roll + ".png";
+
     document.getElementById("result").innerHTML = roll;
 
-},800);
-
+},600);
     setTimeout(function(){
 
         document.getElementById("dice").style.animation =
         "float 4s ease-in-out infinite";
 
-    },800);
+    },600);
 
 };
 
