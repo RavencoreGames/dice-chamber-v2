@@ -133,6 +133,13 @@ setTimeout(function(){
 setTimeout(function(){
     document.getElementById("dice").src = "D20-roll-06.png";
 },500);
+        setTimeout(function(){
+
+    document.getElementById("dice").src = "D20-" + roll + ".png";
+
+    document.getElementById("result").innerHTML = roll;
+
+},650);
     setTimeout(function(){
 
         document.getElementById("dice").style.animation =
