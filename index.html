@@ -135,10 +135,29 @@ border:5px solid red;
         0 0 18px rgba(120,60,255,.8),
         0 0 30px rgba(120,60,255,.4);
 
-    animation: wisp 4s ease-in-out infinite;
+  animation: wisp 4s ease-in-out infinite;
 
-    z-index:3;
-@keyframes wisp{
+z-index:3;
+
+}
+    @keyframes wisp{
+
+    0%{
+        transform:translate(-50%,-50%) rotate(-18deg);
+        opacity:.2;
+    }
+
+    50%{
+        transform:translate(-48%,-58%) rotate(-8deg);
+        opacity:.9;
+    }
+
+    100%{
+        transform:translate(-50%,-66%) rotate(10deg);
+        opacity:0;
+    }
+
+}
 
     0%{
         transform:translate(-50%,-50%) rotate(-18deg);
