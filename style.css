@@ -97,14 +97,27 @@ body{
 
     position:absolute;
 
-    left:100px;
-    top:100px;
+    left:45%;
+    top:58%;
 
-    width:50px;
-    height:50px;
-
-    background:red;
+    width:18px;
+    height:18px;
 
     border-radius:50%;
 
+    background:radial-gradient(
+        circle,
+        #ffffff 0%,
+        #d8b4fe 35%,
+        #a855f7 70%,
+        rgba(168,85,247,0) 100%
+    );
+
+    filter:blur(1px);
+
+    box-shadow:
+        0 0 12px #c084ff,
+        0 0 24px #a855f7,
+        0 0 36px #7e22ce;
 }
+Expected result
