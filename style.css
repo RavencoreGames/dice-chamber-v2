@@ -111,6 +111,7 @@ top:40%;
         #d8b4fe 35%,
         #a855f7 70%,
         rgba(168,85,247,0) 100%
+        
     );
 
     filter:blur(1px);
@@ -120,4 +121,21 @@ top:40%;
         0 0 24px #a855f7,
         0 0 36px #7e22ce;
 }
-Expected result
+@keyframes drift{
+
+    0%{
+        transform:translateY(0px) scale(.7);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120px) scale(1.2);
+        opacity:0;
+        animation:drift 4s linear infinite;
+    }
+
+}
