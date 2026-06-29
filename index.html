@@ -75,21 +75,7 @@ body{
 
     font-family:Arial, sans-serif;
 }
-    #rollButton{
-
-    position:absolute;
-
-    top:90%;
-    left:50%;
-
-    transform:translate(-50%,-50%);
-
-    padding:10px 20px;
-
-    font-size:20px;
-
-    cursor:pointer;
-}
+   
    #rollButton{
 
     position:absolute;
@@ -105,74 +91,9 @@ body{
 
     cursor:pointer;
 }
-.mist{
-
-    position:absolute;
-
-    left:44%;
-    top:63%;
-
-    width:6px;
-    height:100px;
-
-    background:linear-gradient(
-        to top,
-        rgba(140,70,255,0),
-        rgba(210,170,255,1),
-        rgba(140,70,255,0)
-    );
-
-    border-radius:999px;
-
-    filter:blur(3px);
-
-    opacity:.8;
-
-    transform:translate(-50%,-50%) rotate(-18deg);
-
-    box-shadow:
-        0 0 8px rgba(180,120,255,.9),
-        0 0 18px rgba(120,60,255,.8),
-        0 0 30px rgba(120,60,255,.4);
-
-  animation: wisp 4s ease-in-out infinite;
-
-z-index:3;
 
 }
-    @keyframes wisp{
-
-    0%{
-        transform:translate(-50%,-50%) rotate(-18deg);
-        opacity:.2;
-    }
-
-    50%{
-        transform:translate(-48%,-58%) rotate(-8deg);
-        opacity:.9;
-    }
-
-    100%{
-        transform:translate(-50%,-66%) rotate(10deg);
-        opacity:0;
-    }
-
-}
-#mist1{
-
-    position:absolute;
-
-    left:0;
-
-    top:0;
-
-    width:300px;
-
-    opacity:1;
-
-    z-index:999;
-}
-   
+  
 </style>
 </head>
 
@@ -181,8 +102,7 @@ z-index:3;
 <img id="background" src="Blueprint 2.png">
 
 <img id="dice" src="D20 asset.PNG">
-<img id="dice2" src="D20 asset.PNG">
-<img id="mist1" src="Blueprint 2.png">
+
 
 
 <div id="result">17</div>
