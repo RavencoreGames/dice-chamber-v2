@@ -127,10 +127,12 @@ body{
     animation-delay:3.3s;
     transform:scale(.6);
 }
+.particle{
+
     position:absolute;
 
-left:35%;
-top:40%;
+    left:35%;
+    top:40%;
 
     width:18px;
     height:18px;
@@ -143,7 +145,6 @@ top:40%;
         #d8b4fe 35%,
         #a855f7 70%,
         rgba(168,85,247,0) 100%
-        
     );
 
     filter:blur(1px);
@@ -152,8 +153,41 @@ top:40%;
         0 0 12px #c084ff,
         0 0 24px #a855f7,
         0 0 36px #7e22ce;
-     
-animation:drift 4s linear infinite;
+
+    animation:drift 4s linear infinite;
+}
+ .p1{
+    left:42%;
+    top:60%;
+    animation-delay:0s;
+}
+
+.p2{
+    left:48%;
+    top:62%;
+    animation-delay:.8s;
+    transform:scale(.7);
+}
+
+.p3{
+    left:53%;
+    top:57%;
+    animation-delay:1.7s;
+    transform:scale(.5);
+}
+
+.p4{
+    left:39%;
+    top:64%;
+    animation-delay:2.5s;
+    transform:scale(.9);
+}
+
+.p5{
+    left:46%;
+    top:55%;
+    animation-delay:3.3s;
+    transform:scale(.6);
 }
 @keyframes drift{
 
