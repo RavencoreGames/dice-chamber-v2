@@ -36,38 +36,66 @@ function resize(){
 resize();
 window.addEventListener("resize", resize);
 
-let y = canvas.height / 2;
+const embers = [];
+
+for(let i = 0; i < 20; i++){
+
+    embers.push({
+
+        x: canvas.width/2 + (Math.random()-0.5)*120,
+
+        startY: canvas.height/2 + Math.random()*40,
+
+        y: canvas.height/2 + Math.random()*40,
+
+        radius: 3 + Math.random()*5,
+
+        speed: 0.15 + Math.random()*0.35,
+
+        sway: 8 + Math.random()*18,
+
+        offset: Math.random()*1000
+
+    });
+
+}
 
 function draw(){
 
     ctx.clearRect(0,0,canvas.width,canvas.height);
 
-    y -= 0.25;
+    for(const ember of embers){
 
-    if(y < canvas.height/2 - 120){
-        y = canvas.height/2;
+        ember.y -= ember.speed;
+
+        if(ember.y < ember.startY - 140){
+
+            ember.y = ember.startY;
+
+        }
+
+        const x =
+            ember.x +
+            Math.sin((ember.y + ember.offset) * 0.03) * ember.sway;
+
+        ctx.beginPath();
+
+        ctx.arc(
+            x,
+            ember.y,
+            ember.radius,
+            0,
+            Math.PI*2
+        );
+
+        ctx.fillStyle="#c084ff";
+
+        ctx.shadowColor="#c084ff";
+        ctx.shadowBlur=20;
+
+        ctx.fill();
+
     }
-
-    const x =
-        canvas.width/2 +
-        Math.sin(y * 0.03) * 18;
-
-    ctx.beginPath();
-
-    ctx.arc(
-        x,
-        y,
-        8,
-        0,
-        Math.PI * 2
-    );
-
-    ctx.fillStyle = "#c084ff";
-
-    ctx.shadowColor = "#c084ff";
-    ctx.shadowBlur = 25;
-
-    ctx.fill();
 
     requestAnimationFrame(draw);
 
