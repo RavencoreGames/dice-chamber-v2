@@ -61,6 +61,39 @@ function draw(){
 
 }
 
+let y = window.innerHeight / 2;
+
+function draw(){
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    y -= 0.35;
+
+    if(y < window.innerHeight/2 - 120){
+        y = window.innerHeight/2;
+    }
+
+    ctx.beginPath();
+
+    ctx.arc(
+        canvas.width/2,
+        y,
+        8,
+        0,
+        Math.PI*2
+    );
+
+    ctx.fillStyle="#c084ff";
+
+    ctx.shadowColor="#c084ff";
+    ctx.shadowBlur=25;
+
+    ctx.fill();
+
+    requestAnimationFrame(draw);
+
+}
+
 draw();
 
 </script>
