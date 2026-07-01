@@ -42,12 +42,27 @@ for(let i = 0; i < 20; i++){
 
     embers.push({
 
-        x: canvas.width/2 + (Math.random()-0.5)*120,
+      
+const angle = Math.random() * Math.PI * 2;
+const radius = Math.random() * 55;
 
-        startY: canvas.height/2 + Math.random()*40,
+embers.push({
 
-        y: canvas.height/2 + Math.random()*40,
+    x: canvas.width/2 + Math.cos(angle) * radius,
 
+    startY: canvas.height/2 + Math.sin(angle) * radius,
+
+    y: canvas.height/2 + Math.sin(angle) * radius,
+
+    radius: 1 + Math.random()*2,
+
+    speed: 0.15 + Math.random()*0.35,
+
+    sway: 8 + Math.random()*18,
+
+    offset: Math.random()*1000
+
+});
        radius: 1 + Math.random()*2.5,
 
         speed: 0.15 + Math.random()*0.35,
