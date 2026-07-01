@@ -6,24 +6,6 @@
 
 <style>
 
-body{
-    margin:0;
-    overflow:hidden;
-    background:black;
-}
-
-canvas{
-    display:block;
-}
-
-</style>
-
-</head>
-<body>
-
-<canvas id="canvas"></canvas>
-
-<script>
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -62,13 +44,19 @@ for(let i = 0; i < 20; i++){
 
 }
 
+let breath = 0;
+
 function draw(){
 
     ctx.clearRect(0,0,canvas.width,canvas.height);
 
+    breath += 0.01;
+
+    const energy = (Math.sin(breath)+1)/2;
+
     for(const ember of embers){
 
-        ember.y -= ember.speed;
+        ember.y -= ember.speed * (0.6 + energy*0.8);
 
         if(ember.y < ember.startY - 140){
             ember.y = ember.startY;
@@ -85,12 +73,18 @@ function draw(){
             ember.y,
             ember.radius,
             0,
-            Math.PI * 2
+            Math.PI*2
         );
 
-        ctx.fillStyle = "#c084ff";
-        ctx.shadowColor = "#c084ff";
-        ctx.shadowBlur = 20;
+        const glow = 140 + Math.floor(115 * energy);
+
+        ctx.fillStyle =
+            `rgb(${glow},120,255)`;
+
+        ctx.shadowColor =
+            `rgb(${glow},120,255)`;
+
+        ctx.shadowBlur = 10 + energy * 25;
 
         ctx.fill();
 
