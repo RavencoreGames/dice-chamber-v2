@@ -6,6 +6,26 @@
 
 <style>
 
+body{
+    margin:0;
+    overflow:hidden;
+    background:black;
+}
+
+canvas{
+    display:block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -78,12 +98,8 @@ function draw(){
 
         const glow = 140 + Math.floor(115 * energy);
 
-        ctx.fillStyle =
-            `rgb(${glow},120,255)`;
-
-        ctx.shadowColor =
-            `rgb(${glow},120,255)`;
-
+        ctx.fillStyle = `rgb(${glow},120,255)`;
+        ctx.shadowColor = `rgb(${glow},120,255)`;
         ctx.shadowBlur = 10 + energy * 25;
 
         ctx.fill();
@@ -95,7 +111,9 @@ function draw(){
 }
 
 draw();
+
 </script>
 
 </body>
 </html>
+New rule starting now
