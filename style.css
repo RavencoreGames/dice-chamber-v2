@@ -117,5 +117,34 @@ body{
         0 0 12px #c084ff,
         0 0 24px #a855f7,
         0 0 36px #7e22ce;
+    #title{
+
+    position:absolute;
+
+    left:13%;
+
+    top:2%;
+
+    width:74%;
+
+    z-index:30;
+
+    pointer-events:none;
+
+}
+
+#magazine{
+
+    position:absolute;
+
+    left:2%;
+
+    top:2%;
+
+    width:18%;
+
+    z-index:31;
+
+    pointer-events:none;
 
 }
