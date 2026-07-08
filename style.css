@@ -122,11 +122,13 @@ body{
 
 #title{
 
+ #title{
+
     position:absolute;
 
     left:6%;
 
-    top:0%;
+    top:-6%;
 
     width:88%;
 
