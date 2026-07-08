@@ -124,11 +124,11 @@ body{
 
     position:absolute;
 
-    left:12%;
-    top:-1%;
-    width:74%;
-
-    z-index:30;
+width:50%;
+left:20%;
+top:2%;
+    
+z-index:30;
 
     pointer-events:none;
 
