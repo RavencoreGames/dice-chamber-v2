@@ -213,14 +213,17 @@ top: 0%;
     100%{
         opacity:.45;
     }
-    #wisp1{
+
+}
+
+#wisp1{
 
     position:absolute;
 
     width:140px;
 
-    left:64%;
-    top:34%;
+    left:55%;
+    top:46%;
 
     z-index:8;
 
@@ -234,4 +237,4 @@ top: 0%;
 
 }
 
-}
+Notice:
