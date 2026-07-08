@@ -121,17 +121,12 @@ body{
 }   /* <-- THIS BRACE WAS MISSING */
 
 #title{
-
     position:absolute;
-
-width:50%;
-left:20%;
-top:2%;
-    
-z-index:30;
-
+    left:25%;
+    top:8%;
+    width:60%;
+    z-index:30;
     pointer-events:none;
-
 }
 
 #magazine{
