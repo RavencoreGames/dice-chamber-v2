@@ -127,13 +127,7 @@ body{
 }
 
 #magazine{
-
-    position:absolute;
-
-    left:-2%;
+    left:-1%;
     top:0%;
-    width:24%;
-
-    z-index:31;
-    pointer-events:none;
+    width:18%;
 }
