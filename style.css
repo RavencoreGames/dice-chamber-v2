@@ -136,12 +136,18 @@ body{
 }   /* <-- THIS BRACE WAS MISSING */
 
 #title{
+
     position:absolute;
-    left:25%;
-    top:8%;
-    width:60%;
+
+    left:21%;
+    top:2%;
+
+    width:58%;
+
     z-index:30;
+
     pointer-events:none;
+
 }
 
 #magazine{
