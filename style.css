@@ -117,7 +117,10 @@ body{
         0 0 12px #c084ff,
         0 0 24px #a855f7,
         0 0 36px #7e22ce;
-    #title{
+
+}   /* <-- THIS BRACE WAS MISSING */
+
+#title{
 
     position:absolute;
 
