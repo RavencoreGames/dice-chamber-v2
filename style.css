@@ -7,9 +7,11 @@ body{
 
     position:relative;
 
-    width:100vw;
+    aspect-ratio:1148 / 1369;
 
     height:100vh;
+
+    margin:auto;
 
 }
 /* Background */
