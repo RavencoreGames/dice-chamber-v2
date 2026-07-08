@@ -163,6 +163,27 @@ top: 0%;
     pointer-events:none;
 
 }
+#wisp1{
+
+    position:absolute;
+
+    width:140px;
+
+    left:64%;
+
+    top:34%;
+
+    z-index:8;
+
+    pointer-events:none;
+
+    opacity:.7;
+
+    animation:
+        wispFloat 6s ease-in-out infinite,
+        wispFade 5s ease-in-out infinite;
+
+}
 @keyframes wispFloat{
 
     0%{
