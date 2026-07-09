@@ -194,4 +194,24 @@ top: 0%;
     }
 
 }
+#wisp1{
+
+    position:absolute;
+
+    width:140px;
+
+    left:55%;
+    top:46%;
+
+    z-index:8;
+
+    pointer-events:none;
+
+    opacity:.7;
+
+    animation:
+        wispFloat 6s ease-in-out infinite,
+        wispFade 5s ease-in-out infinite;
+
+}
 
