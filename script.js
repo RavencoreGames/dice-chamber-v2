@@ -6,7 +6,14 @@ function createParticle(){
 
     particle.className = "particle";
 
+    particle.style.left = (47 + Math.random() * 6) + "%";
+    particle.style.top = (60 + Math.random() * 4) + "%";
+
     effects.appendChild(particle);
+
+    setTimeout(function(){
+        particle.remove();
+    },5000);
 
 }
 setInterval(createParticle,1000);
