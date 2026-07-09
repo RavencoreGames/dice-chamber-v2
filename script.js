@@ -16,7 +16,7 @@ function createParticle(){
     },5000);
 
 }
-setInterval(createParticle,1000);
+setInterval(createParticle,250);
 document.getElementById("rollButton").onclick = function() {
 
     document.getElementById("dice").style.animation = "pulse 0.4s ease";
