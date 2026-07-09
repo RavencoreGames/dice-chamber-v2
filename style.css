@@ -167,12 +167,13 @@ top: 0%;
 
     width:100%;
 
-    z-index:4;
+    opacity:.5;
+
+    z-index:50;
 
     pointer-events:none;
 
 }
-
 #rightCandles{
 
     position:absolute;
@@ -182,7 +183,9 @@ top: 0%;
 
     width:100%;
 
-    z-index:4;
+    opacity:.5;
+
+    z-index:50;
 
     pointer-events:none;
 
