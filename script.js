@@ -1,10 +1,14 @@
 const effects = document.getElementById("effects");
 
-const ember = document.createElement("div");
+function createParticle(){
 
-ember.className = "particle";
+    const particle = document.createElement("div");
 
-effects.appendChild(ember);
+    particle.className = "particle";
+
+    effects.appendChild(particle);
+
+}
 document.getElementById("rollButton").onclick = function() {
 
     document.getElementById("dice").style.animation = "pulse 0.4s ease";
