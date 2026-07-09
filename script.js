@@ -6,8 +6,9 @@ function createParticle(){
 
     particle.className = "particle";
 
-    particle.style.left = (47 + Math.random() * 6) + "%";
-    particle.style.top = (60 + Math.random() * 4) + "%";
+    
+particle.style.left = (42 + Math.random() * 16) + "%";
+particle.style.top = (58 + Math.random() * 8) + "%";
 
     effects.appendChild(particle);
 
