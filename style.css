@@ -201,7 +201,7 @@ top: 0%;
     }
 
     100%{
-        transform:translate(0,-180px);
+        transform:translate(0,-260px);
         opacity:0;
     }
 
