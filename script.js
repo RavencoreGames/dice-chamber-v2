@@ -5,6 +5,9 @@ function createParticle(){
     const particle = document.createElement("div");
 
     particle.className = "particle";
+    particle.style.animationDuration = (4 + Math.random() * 3) + "s";
+    particle.style.width = (4 + Math.random() * 8) + "px";
+particle.style.height = particle.style.width;
 
     
 particle.style.left = (42 + Math.random() * 16) + "%";
