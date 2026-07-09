@@ -112,28 +112,23 @@ body{
 
     position:absolute;
 
-    left:45%;
-    top:58%;
-
-    width:18px;
-    height:18px;
+    width:8px;
+    height:8px;
 
     border-radius:50%;
 
-    background:radial-gradient(
-        circle,
-        #ffffff 0%,
-        #d8b4fe 35%,
-        #a855f7 70%,
-        rgba(168,85,247,0) 100%
-    );
+    background:#d8b4fe;
 
     box-shadow:
-        0 0 12px #c084ff,
-        0 0 24px #a855f7,
-        0 0 36px #7e22ce;
+        0 0 8px #ffffff,
+        0 0 16px #c084ff,
+        0 0 24px #a855f7;
 
-}   /* <-- THIS BRACE WAS MISSING */
+    pointer-events:none;
+
+    animation: magicRise 5s linear forwards;
+
+}
 
 #title{
 
