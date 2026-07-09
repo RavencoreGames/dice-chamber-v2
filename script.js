@@ -9,6 +9,7 @@ function createParticle(){
     effects.appendChild(particle);
 
 }
+setInterval(createParticle,1000);
 document.getElementById("rollButton").onclick = function() {
 
     document.getElementById("dice").style.animation = "pulse 0.4s ease";
