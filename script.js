@@ -5,7 +5,9 @@ function createParticle(){
     const particle = document.createElement("div");
 
     particle.className = "particle";
-    particle.style.animationDuration = (4 + Math.random() * 3) + "s";
+const duration = 4 + Math.random() * 3;
+
+particle.style.animationDuration = duration + "s";
     particle.style.width = (4 + Math.random() * 8) + "px";
 particle.style.height = particle.style.width;
 
@@ -15,10 +17,10 @@ particle.style.top = (58 + Math.random() * 8) + "%";
 
     effects.appendChild(particle);
 
-    setTimeout(function(){
-        particle.remove();
-    },5000);
-
+setTimeout(function(){
+    particle.remove();
+}, duration * 1000);
+    
 }
 setInterval(createParticle,250);
 document.getElementById("rollButton").onclick = function() {
