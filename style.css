@@ -215,6 +215,39 @@ top: 0%;
     }
 
 }
+@keyframes flameFlicker{
+
+    0%{
+        transform:scale(1) rotate(-2deg);
+        opacity:.95;
+        filter:brightness(1);
+    }
+
+    25%{
+        transform:scale(.95) rotate(1deg);
+        opacity:.85;
+        filter:brightness(.9);
+    }
+
+    50%{
+        transform:scale(1.08) rotate(-1deg);
+        opacity:1;
+        filter:brightness(1.15);
+    }
+
+    75%{
+        transform:scale(.98) rotate(2deg);
+        opacity:.9;
+        filter:brightness(1);
+    }
+
+    100%{
+        transform:scale(1) rotate(-2deg);
+        opacity:.95;
+        filter:brightness(1);
+    }
+
+}
 /*
 #wisp1{
 
