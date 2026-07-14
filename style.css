@@ -159,33 +159,21 @@ top: 0%;
 
 }
 #leftCandles{
-
     position:absolute;
-
-    left:0;
-    top:0;
-
-    width:100%;
-
+    left:2%;
+    top:12%;
+    width:22%;
     z-index:4;
-
     pointer-events:none;
-
 }
 
 #rightCandles{
-
     position:absolute;
-
-    left:0;
-    top:0;
-
-    width:100%;
-
+    left:76%;
+    top:12%;
+    width:22%;
     z-index:4;
-
     pointer-events:none;
-
 }
 
 @keyframes wispFloat{
