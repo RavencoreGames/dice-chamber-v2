@@ -162,7 +162,7 @@ top: 0%;
     position:absolute;
     left:2%;
     top:12%;
-    width:22%;
+    width:11%;
     z-index:4;
     pointer-events:none;
 }
@@ -171,7 +171,7 @@ top: 0%;
     position:absolute;
     left:76%;
     top:12%;
-    width:22%;
+    width:11%;
     z-index:4;
     pointer-events:none;
 }
