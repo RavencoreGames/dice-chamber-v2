@@ -160,7 +160,7 @@ top: 0%;
 }
 #leftCandles{
     position:absolute;
-    left:6%;
+    left:-1%;
     top:51%;
     width:11%;
     z-index:4;
