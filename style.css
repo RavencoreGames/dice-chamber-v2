@@ -175,7 +175,21 @@ top: 0%;
     z-index:4;
     pointer-events:none;
 }
+#raven{
 
+    position:absolute;
+
+    width:8%;
+
+    left:73%;
+
+    top:44%;
+
+    z-index:3;
+
+    pointer-events:auto;
+
+}
 @keyframes wispFloat{
 
     0%{
