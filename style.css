@@ -347,7 +347,7 @@ top: 0%;
 
     transform-origin:center bottom;
 
-    animation:flameFlicker .45s infinite alternate;
+    animation:flameFlicker .62s infinite alternate;
 
     pointer-events:none;
 
