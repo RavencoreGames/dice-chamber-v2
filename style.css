@@ -190,6 +190,21 @@ top: 0%;
     pointer-events:auto;
 
 }
+#bookshelf{
+
+    position:absolute;
+
+    width:45%;
+
+    left:4%;
+
+    top:12%;
+
+    z-index:2;
+
+    pointer-events:none;
+
+}
 @keyframes wispFloat{
 
     0%{
