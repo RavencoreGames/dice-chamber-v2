@@ -50,7 +50,7 @@ body{
 #dice{
     position:absolute;
     top:50%;
-    left:50%;
+    left:49%;
     transform:translate(-50%,-50%);
     width:220px;
     z-index:10;
@@ -62,8 +62,8 @@ body{
 
     position:absolute;
 
-    top:82%;
-    left:50%;
+    top:80%;
+    left:48%;
 
     transform:translate(-50%,-50%);
 
@@ -161,7 +161,7 @@ top: 0%;
 #leftCandles{
     position:absolute;
     left:0%;
-    top:53%;
+    top:52%;
     width:8%;
     z-index:4;
     pointer-events:none;
@@ -170,7 +170,7 @@ top: 0%;
 #rightCandles{
     position:absolute;
     left:86%;
-    top:45%;
+    top:44%;
     width:11%;
     z-index:4;
     pointer-events:none;
@@ -183,7 +183,7 @@ top: 0%;
 
     left:65%;
 
-    top:26.6%;
+    top:26.3%;
 
     z-index:3;
 
@@ -198,7 +198,7 @@ top: 0%;
 
     left:0%;
 
-    top:08%;
+    top:06%;
 
     z-index:2;
 
@@ -332,26 +332,7 @@ top: 0%;
     pointer-events:none;
 
 }
-#centerFlame{
 
-    position:absolute;
-
-    left:69.8%;
-    
-    top:26%;
-
-    width:3%;
-
-
-    z-index:5;
-
-    transform-origin:center bottom;
-
-    animation:flameFlicker .62s infinite alternate;
-
-    pointer-events:none;
-
-}
 /*
 #wisp1{
 
