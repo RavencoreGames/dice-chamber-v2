@@ -332,24 +332,6 @@ top: 0%;
     pointer-events:none;
 
 }
-#centerFlame{
-
-    position:absolute;
-
-    left:70%;
-    
-    top:26%;
-
-    width:2%;
-
-
-    z-index:5;
-
-    transform-origin:center bottom;
-
-    animation:flameFlicker .62s infinite alternate;
-
-    pointer-events:none;
 
 }
 /*
