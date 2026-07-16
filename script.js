@@ -1,3 +1,10 @@
+const rollSound = new Audio("dice-roll.mp3");
+rollSound.volume = 0.5;
+document.getElementById("rollButton").onclick = function() {
+
+    rollSound.currentTime = 0;
+    rollSound.play();
+    
 const effects = document.getElementById("effects");
 
 function createParticle(){
