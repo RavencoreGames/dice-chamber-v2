@@ -1,10 +1,6 @@
 const rollSound = new Audio("dice-roll.mp3");
 rollSound.volume = 0.5;
-document.getElementById("rollButton").onclick = function() {
 
-    rollSound.currentTime = 0;
-    rollSound.play();
-    
 const effects = document.getElementById("effects");
 
 function createParticle(){
@@ -12,25 +8,30 @@ function createParticle(){
     const particle = document.createElement("div");
 
     particle.className = "particle";
-const duration = 4 + Math.random() * 3;
 
-particle.style.animationDuration = duration + "s";
+    const duration = 4 + Math.random() * 3;
+
+    particle.style.animationDuration = duration + "s";
     particle.style.width = (4 + Math.random() * 8) + "px";
-particle.style.height = particle.style.width;
+    particle.style.height = particle.style.width;
 
-    
-particle.style.left = (42 + Math.random() * 16) + "%";
-particle.style.top = (58 + Math.random() * 8) + "%";
+    particle.style.left = (42 + Math.random() * 16) + "%";
+    particle.style.top = (58 + Math.random() * 8) + "%";
 
     effects.appendChild(particle);
 
-setTimeout(function(){
-    particle.remove();
-}, duration * 1000);
-    
+    setTimeout(function(){
+        particle.remove();
+    }, duration * 1000);
+
 }
+
 setInterval(createParticle,250);
+
 document.getElementById("rollButton").onclick = function() {
+
+    rollSound.currentTime = 0;
+    rollSound.play();
 
     document.getElementById("dice").style.animation = "pulse 0.4s ease";
 
