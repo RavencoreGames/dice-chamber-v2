@@ -169,8 +169,8 @@ top: 0%;
 
 #rightCandles{
     position:absolute;
-    left:86%;
-    top:45%;
+    left:83%;
+    top:42%;
     width:11%;
     z-index:4;
     pointer-events:none;
