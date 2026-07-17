@@ -99,21 +99,6 @@ body{
     font-family:Arial, sans-serif;
 }
    
-   #rollButton{
-
-    position:absolute;
-
-    top:90%;
-    left:50%;
-
-    transform:translate(-50%,-50%);
-
-    padding:10px 20px;
-
-    font-size:20px;
-
-    cursor:pointer;
-}
 
 #effects{
 
