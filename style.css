@@ -48,15 +48,34 @@ body{
 
 }
 #dice{
+
     position:absolute;
+
     top:50%;
-    left:50%;
+    left:49%;
+
     transform:translate(-50%,-50%);
+
     width:220px;
+
     z-index:10;
+
     animation: float 4s ease-in-out infinite;
+
+    cursor:pointer;
+
+    transition:filter .2s ease;
+
 }
 
+#dice:hover{
+
+    filter:
+        brightness(1.08)
+        drop-shadow(0 0 8px #c084ff)
+        drop-shadow(0 0 18px #9333ea);
+
+}
 
     #result{
 
