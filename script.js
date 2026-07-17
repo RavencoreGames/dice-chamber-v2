@@ -28,7 +28,7 @@ function createParticle(){
 
 setInterval(createParticle,250);
 
-document.getElementById("rollButton").onclick = function() {
+document.getElementById("dice").onclick = function() {
 
     rollSound.currentTime = 0;
     rollSound.play();
